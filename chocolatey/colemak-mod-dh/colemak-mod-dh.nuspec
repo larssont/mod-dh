@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>colemak-mod-dh</id>
+    <version>0.0.1</version>
+    <owners>larssont</owners>
+    <title>Colemak Mod-DH (Install)</title>
+    <authors>SteveP</authors>
+    <projectUrl>https://colemakmods.github.io/mod-dh/</projectUrl>
+    <projectSourceUrl>https://github.com/ColemakMods/mod-dh</projectSourceUrl>
+    <docsUrl>https://colemakmods.github.io/mod-dh/</docsUrl>
+    <tags>colemak-mod-dh colemak keyboard layout</tags>
+    <summary>Colemak Mod-DH keyboard layout installer.</summary>
+    <description>
+    ### Description
+    Colemak Mod-DH introduces a minor modification to the Colemak keyboard layout, designed to make typing more comfortable. The resulting layout is commonly known as Colemak-DH.
+
+    There are separate implementations optimized for ISO, ANSI and matrix keyboards.
+
+    Highlights:
+
+    * Places the heavily used D and H keys in more comfortable and easier-to-reach positions.
+    * Moves G to a slightly easier position also, reverting to its placement in Qwerty.
+    * Reduces usage of the difficult-to-reach centre column by about half.
+    * Utilizes the "Angle Mod" (see below) to promote a more comfortable, symmetrical typing posture on standard keyboards.
+    * Retains Colemak's many other strengths, such as its home key placement and low rate of same-finger bigrams.
+    * No keys change fingers from standard Colemak, making it easy to adopt for existing Colemak users.
+
+
+    ### Package Specific
+    This package defaults to installing the US ANSI Colemak Mod-DH layout, but a specific layout can be chosen by passing the parameter `layout`. See below for an example.
+
+    `choco install colemak-mod-dh [other options] --params=/layout:dhk_iso_uk_wide`
+
+    The following options are available:
+
+    * dh_ansi_us
+    * dh_ansi_us_awing
+    * dh_ansi_us_wide
+    * dh_iso_uk
+    * dh_iso_uk_wide
+    * dh_matrix_us
+    * dhk_ansi_us
+    * dhk_ansi_us_awing
+    * dhk_ansi_us_wide
+    * dhk_iso_uk
+    * dhk_iso_uk_wide
+
+    ### Credits
+
+    **Colemak**
+    Original layout was designed by Shai Coleman.
+
+    **Colemak-DH**
+    The original Mod-DH was developed and launched by SteveP in October 2014.
+
+    More information about Colemak Mod-DH.
+    https://colemakmods.github.io/mod-dh/
+    https://forum.colemak.com/topic/1942-moddh-for-colemak/
+    </description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
